@@ -13,7 +13,7 @@ function showClock() {
 function sayHi(hours) {
     const user = localStorage.getItem("user");
     let dayStatus = "";
-    if (22 < hours <6) dayStatus = "night";
+    if (22 < hours || hours <6) dayStatus = "night";
     else if (hours < 12) dayStatus = "morning";
     else if (hours < 17) dayStatus = "afternoon";
     else dayStatus = "evening";
